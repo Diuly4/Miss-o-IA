@@ -1,9 +1,10 @@
-:root {
-    --cor-fundo: #0F172A;      /* Azul ardósia muito escuro */
-    --cor-principal: #1E293B;  /* Azul ardósia fechado */
-    --cor-secundaria: #334155; /* Tom intermediário para botões */
-    --cor-destaque: #8B5CF6;   /* Violeta vibrante para ênfase */
-    --cor-texto: #F8FAFC;      /* Branco levemente acinzentado */
+:root{
+    --cor-fundo: #01080E ;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
+
 }
 
 body {
@@ -13,38 +14,30 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Adicionado para um visual mais limpo */
 }
 
-.caixa-principal {
+.caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 30px;             /* Aumentado levemente para melhor respiro */
-    border-radius: 20px;       /* Bordas mais arredondadas para um look moderno */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+    padding: 20px;
 }
 
-h1 {
+h1{
     color: var(--cor-destaque);
-    margin-bottom: 20px;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     border: none;
-    border-radius: 12px;
-    padding: 12px 24px;
-    font-weight: 600;
-    cursor: pointer;           /* Adicionado para indicar clique */
-    transition: all 0.3s ease;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+button:hover{
     background-color: var(--cor-destaque);
-    color: #FFFFFF;
-    transform: translateY(-2px); /* Pequeno efeito de levitação */
-    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
+    color: var(--cor-principal);
 }
